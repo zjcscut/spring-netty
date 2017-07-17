@@ -1,0 +1,4 @@
+serverAddress: 127.0.0.1:9092
+protocol: jdk
+server:
+  port: 9091

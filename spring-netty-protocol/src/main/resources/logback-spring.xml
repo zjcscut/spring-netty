@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="30 seconds">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] [%class:%line] - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--日志屏蔽-->
+    <logger name="org.springframework.amqp" level="INFO"/>
+    <logger name="org.springframework.beans" level="WARN"/>
+    <logger name="org.springframework.context" level="WARN"/>
+    <logger name="org.springframework.core" level="WARN"/>
+    <logger name="org.springframework.aop" level="WARN"/>
+    <logger name="org.springframework.web" level="WARN"/>
+    <logger name="org.springframework.test" level="WARN"/>
+    <logger name="org.apache.ibatis" level="WARN"/>
+    <logger name="org.hibernate.type" level="WARN"/>
+    <logger name="org.hibernate.cfg" level="WARN"/>
+    <logger name="org.hibernate.persister" level="WARN"/>
+    <logger name="org.hibernate.validator" level="WARN"/>
+    <logger name="org.quartz" level="WARN"/>
+
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
